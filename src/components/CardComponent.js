@@ -9,6 +9,11 @@ import esp from "../img/Bandera_de_España.png";
 export default function CardComponent(props) {
     const [hideCheckbox, setHideCheckbox] = useState(false);
 
+    const clickByCell = function (){
+        setHideCheckbox(!hideCheckbox);
+        props.showButtonFunc(!props.isShowButton);
+    }
+
     let image = null;
 
     switch (props.title) {
@@ -26,7 +31,7 @@ export default function CardComponent(props) {
     return (
         <Card style={props.style} mode="outline">
             <SimpleCell
-                onClick={() => setHideCheckbox(!hideCheckbox)}
+                onClick={clickByCell}
                 before={<Avatar src={image}/>}
                 after={hideCheckbox && <Icon28ChecksOutline fill={"white"}/>}
             >

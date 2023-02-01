@@ -5,7 +5,7 @@ import {Button, ButtonGroup, Title} from "@vkontakte/vkui";
 export default function ButtonComponents(props) {
     return (
         <ButtonGroup mode="vertical" align="center" gap="space" style={props.styeButtonGroup}>
-            <Button size="l" stretched="true" align="center" style={props.styleButton}>
+            <Button size="l" stretched="true" align="center" style={props.styleButton} onClick={()=>props.setView('view2')}>
                 <Title level="3">
                     {props.title}
                 </Title>

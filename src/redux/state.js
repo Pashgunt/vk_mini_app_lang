@@ -29,4 +29,5 @@ export const state = {
             ]
         },
     },
+    activeView: "firstPage",
 }
