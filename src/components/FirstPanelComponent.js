@@ -12,7 +12,7 @@ export default function FirstPanelComponent(props) {
     const [isCheckedLang, setIsCheckLang] = useState(false);
 
     return (
-        <Group mode="plain">
+        <Group mode="plain" style={{background:"#5982fe", minHeight:"100vh"}}>
             <TitleComponent state={state.configs.firstPage.title}/>
             <CardGrid size="l" spaced="true">
                 {
@@ -27,10 +27,10 @@ export default function FirstPanelComponent(props) {
                     })
                 }
             </CardGrid>
-            <Spacing size={48}/>
-            <HeaderComponent title={"Остальные языки"} style={{color: "white"}}/>
-            <Spacing size={24}/>
+            <Spacing size={36}/>
             <CardGrid size="l" spaced="true">
+                <HeaderComponent title={"Остальные языки"} style={{color: "white"}}/>
+                <Spacing size={32}/>
                 {
                     state.configs.studyLanguages.another.map((title, index) => {
                         return <CardComponent

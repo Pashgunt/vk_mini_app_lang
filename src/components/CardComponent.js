@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import '@vkontakte/vkui/dist/vkui.css';
-import {Avatar, Card, SimpleCell, Spacing, Title} from "@vkontakte/vkui";
+import {Avatar, Card, Div, SimpleCell, Spacing, Title} from "@vkontakte/vkui";
 import {Icon28ChecksOutline} from "@vkontakte/icons";
 import eng from "../img/Flag_of_the_United_Kingdom.png";
 import ger from "../img/1200px-Flag_of_Germany.png";
